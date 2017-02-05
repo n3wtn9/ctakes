@@ -1,20 +1,15 @@
 package org.meetup.jnlp;
 
 import org.apache.uima.UIMAException;
-import org.apache.uima.analysis_engine.AnalysisEngine;
 import org.apache.uima.analysis_engine.AnalysisEngineDescription;
-import org.apache.uima.fit.factory.JCasFactory;
-import org.apache.uima.jcas.JCas;
 import org.apache.uima.resource.ResourceInitializationException;
 import org.apache.uima.util.InvalidXMLException;
 import org.junit.Before;
-import org.junit.Test;
 
 import java.io.IOException;
 
 import static org.apache.uima.fit.factory.AnalysisEngineFactory.createEngineDescriptionFromPath;
 import static org.apache.uima.fit.factory.AnalysisEngineFactory.createEngineDescription;
-import static org.apache.uima.fit.factory.AnalysisEngineFactory.createEngine;
 
 public class PipelineBase {
     public AnalysisEngineDescription simpleSegmentAnnotator;
@@ -64,11 +59,5 @@ public class PipelineBase {
             dictionaryLookupAnnotatorDB,
             negeationAnnotator
         );
-
-        // Example
-        //AnalysisEngine ae = createEngine(totalPipeline);
-        //JCas jCas = JCasFactory.createJCas();
-        //jCas.setDocumentText("John has cancer.");
-        //ae.process(jCas);
     }
 }
