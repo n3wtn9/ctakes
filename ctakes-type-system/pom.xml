@@ -64,7 +64,7 @@
 				      <goals><goal>generate</goal></goals>
 				      <configuration>
 				        <typeSystemIncludes>
-				          <typeSystemInclude>src/main/resources/org/apache/ctakes/**/types/TypeSystem.xml</typeSystemInclude>				          
+				          <typeSystemInclude>src/main/resources/org/apache/ctakes/**/types/TypeSystem.xml</typeSystemInclude>
 				        </typeSystemIncludes>
 				        <limitToProject>false</limitToProject>
 				      </configuration>

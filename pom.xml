@@ -138,6 +138,7 @@
 		<module>ctakes-ytex-web</module>
 		<module>ctakes-dictionary-lookup-fast</module>
 		<module>ctakes-dictionary-lookup-fast-res</module>
+		<module>ctakes-jnlp</module>
 	</modules>
 	<dependencyManagement>
 		<dependencies>
